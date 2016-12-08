@@ -14,26 +14,12 @@ Everyone will get a chance to **be creative**, and work through some really **to
 
 **You will be working individually for this project**, but we'll be guiding you as you get started. Show us what you've got!
 
-
 ---
 
 ### Timeline
 
-* **Assigned:** ADD START DATE HERE
-* **Due:** ADD DUE DATE HERE at 9:00AM
-
-
----
-
-### Essential Skills
-
-By the time you submit this project, you should focus on leveling up in important skill areas:
-
-* **Terminal**: Practice interacting with the computer and navigating the file-system from the Command Line.
-* **Git**: Manage and interact with a git repository to store changes to code.
-* **JavaScript and jQuery Fundamentals**: Work with objects and events, while strategically solving problems and resolving errors.
-* **HTML and CSS**: Work on HTML structure, CSS styles, and perhaps even animating elements within a browser. Respond to actions your users take and the data they input into the browser.
-* **Documentation**: Document your code and your GitHub repository so others understand what you've built.
+* **Assigned:** Thursday, December 8th
+* **Due:** Monday, December 12th at 9:00AM
 
 ---
 
@@ -57,7 +43,7 @@ Your app must:
 
 * A **working game, built by you**, hosted somewhere on the internet.
 * A **git repository hosted on Github**, with a link to your hosted game, and frequent commits dating back to the very beginning of the project
-* **A `readme.md` file** with a short description of the project, a list of which technologies you used for which parts of the app, an explanation of your approach (share some part of the code), and optionally a list of unsolved problems,  screenshots, etc.  See the [example readme](https://github.com/sf-wdi-labs/readme-example).
+* **A `readme.md` file** with a short description of the project, a list of which technologies you used for which parts of the app, an explanation of your approach (share some part of the code), and optionally a list of unsolved problems,  screenshots, etc.  See the [example readme](https://github.com/sf-wdi-34/readme-example).
 * A **link to your hosted working game** in your game's Github repo.
 * A **link to your hosted working game** in the "my work" section of your personal website.
 * A
@@ -137,6 +123,17 @@ These are some ideas that could take your game "above and beyond." **Don't focus
 * Add **timers** like a countdown timer ("3, 2, 1, Go!"), track the winning time, or track the best time across multiple rounds.
 * **Play against a bot**.
 * Integrate with a **3rd party API**: flickr, youtube, spotify, giphy, etc.
+
+---
+### Essential Skills
+
+By the time you submit this project, you should focus on leveling up in important skill areas:
+
+* **Terminal**: Practice interacting with the computer and navigating the file-system from the Command Line.
+* **Git**: Manage and interact with a git repository to store changes to code.
+* **JavaScript and jQuery Fundamentals**: Work with objects and events, while strategically solving problems and resolving errors.
+* **HTML and CSS**: Work on HTML structure, CSS styles, and perhaps even animating elements within a browser. Respond to actions your users take and the data they input into the browser.
+* **Documentation**: Document your code and your GitHub repository so others understand what you've built.
 
 ---
 
