@@ -46,7 +46,7 @@ Your app must:
 * **A `readme.md` file** with a short description of the project, a list of which technologies you used for which parts of the app, an explanation of your approach (share some part of the code), and optionally a list of unsolved problems,  screenshots, etc.  See the [example readme](https://github.com/sf-wdi-34/readme-example).
 * A **link to your hosted working game** in your game's Github repo.
 * A **link to your hosted working game** in the "my work" section of your personal website.
-* A
+* **[Fill out this spreadsheet](https://docs.google.com/spreadsheets/d/1vzxkkVwX2zU40BZArMknoHMYlu_5bVmyNYAEBMJXH5E/edit?usp=sharing)** with your project links.
 
 ---
 
