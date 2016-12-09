@@ -1,0 +1,9 @@
+.col-md-1 {
+  height: 50px;
+  border: 1px dashed black;
+}
+
+#start {
+  border: 1px dashed black;
+  text-align: center;
+}

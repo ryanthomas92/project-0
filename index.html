@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
     <title>RUNNING BACK RENEGADE</title>
   </head>
   <body>
@@ -16,151 +19,160 @@
           <hr>
         </div>
       </div>
-        <!-- a column represents our game board -->
-      <div class = "row">
+
         <div class = "col-md 6 col-md-offset-1" id = "grid">
 
-
           <div class = "row">
-            <div class = "col-md-1" class = "one">1</div>
-            <div class = "col-md-1" class = "two">2</div>
-            <div class = "col-md-1" class = "three">3</div>
-            <div class = "col-md-1" class = "four">4</div>
-            <div class = "col-md-1" class = "five">5</div>
-            <div class = "col-md-1" class = "six">6</div>
-            <div class = "col-md-1" class = "seven">7</div>
-            <div class = "col-md-1" class = "eight">8</div>
-            <div class = "col-md-1" class = "nine">9</div>
-            <div class = "col-md-1" class = "ten">10</div>
-            <div class = "col-md-1" class = "eleven">11</div>
+            <div class = "col-md-1 box" class = "one">1</div>
+            <div class = "col-md-1 box" class = "two">2</div>
+            <div class = "col-md-1 box" class = "three">3</div>
+            <div class = "col-md-1 box" class = "four">4</div>
+            <div class = "col-md-1 box" class = "five">5</div>
+            <div class = "col-md-1 box" class = "six">6</div>
+            <div class = "col-md-1 box" class = "seven">7</div>
+            <div class = "col-md-1 box" class = "eight">8</div>
+            <div class = "col-md-1 box" class = "nine">9</div>
+            <div class = "col-md-1 box" class = "ten">10</div>
+            <div class = "col-md-1 box" class = "eleven">11</div>
           </div>
 
           <div class = "row">
-            <div class = "col-md-1" class = "one">1</div>
-            <div class = "col-md-1" class = "two">2</div>
-            <div class = "col-md-1" class = "three">3</div>
-            <div class = "col-md-1" class = "four">4</div>
-            <div class = "col-md-1" class = "five">5</div>
-            <div class = "col-md-1" class = "six">6</div>
-            <div class = "col-md-1" class = "seven">7</div>
-            <div class = "col-md-1" class = "eight">8</div>
-            <div class = "col-md-1" class = "nine">9</div>
-            <div class = "col-md-1" class = "ten">10</div>
-            <div class = "col-md-1" class = "eleven">11</div>
+            <div class = "col-md-1 box" class = "one">1</div>
+            <div class = "col-md-1 box" class = "two">2</div>
+            <div class = "col-md-1 box" class = "three">3</div>
+            <div class = "col-md-1 box" class = "four">4</div>
+            <div class = "col-md-1 box" class = "five">5</div>
+            <div class = "col-md-1 box" class = "six">6</div>
+            <div class = "col-md-1 box" class = "seven">7</div>
+            <div class = "col-md-1 box" class = "eight">8</div>
+            <div class = "col-md-1 box" class = "nine">9</div>
+            <div class = "col-md-1 box" class = "ten">10</div>
+            <div class = "col-md-1 box" class = "eleven">11</div>
           </div>
 
           <div class = "row">
-            <div class = "col-md-1" class = "one">1</div>
-            <div class = "col-md-1" class = "two">2</div>
-            <div class = "col-md-1" class = "three">3</div>
-            <div class = "col-md-1" class = "four">4</div>
-            <div class = "col-md-1" class = "five">5</div>
-            <div class = "col-md-1" class = "six">6</div>
-            <div class = "col-md-1" class = "seven">7</div>
-            <div class = "col-md-1" class = "eight">8</div>
-            <div class = "col-md-1" class = "nine">9</div>
-            <div class = "col-md-1" class = "ten">10</div>
-            <div class = "col-md-1" class = "eleven">11</div>
+            <div class = "col-md-1 box" class = "one">1</div>
+            <div class = "col-md-1 box" class = "two">2</div>
+            <div class = "col-md-1 box" class = "three">3</div>
+            <div class = "col-md-1 box" class = "four">4</div>
+            <div class = "col-md-1 box" class = "five">5</div>
+            <div class = "col-md-1 box" class = "six">6</div>
+            <div class = "col-md-1 box" class = "seven">7</div>
+            <div class = "col-md-1 box" class = "eight">8</div>
+            <div class = "col-md-1 box" class = "nine">9</div>
+            <div class = "col-md-1 box" class = "ten">10</div>
+            <div class = "col-md-1 box" class = "eleven">11</div>
           </div>
 
           <div class = "row">
-            <div class = "col-md-1" class = "one">1</div>
-            <div class = "col-md-1" class = "two">2</div>
-            <div class = "col-md-1" class = "three">3</div>
-            <div class = "col-md-1" class = "four">4</div>
-            <div class = "col-md-1" class = "five">5</div>
-            <div class = "col-md-1" class = "six">6</div>
-            <div class = "col-md-1" class = "seven">7</div>
-            <div class = "col-md-1" class = "eight">8</div>
-            <div class = "col-md-1" class = "nine">9</div>
-            <div class = "col-md-1" class = "ten">10</div>
-            <div class = "col-md-1" class = "eleven">11</div>
+            <div class = "col-md-1 box" class = "one">1</div>
+            <div class = "col-md-1 box" class = "two">2</div>
+            <div class = "col-md-1 box" class = "three">3</div>
+            <div class = "col-md-1 box" class = "four">4</div>
+            <div class = "col-md-1 box" class = "five">5</div>
+            <div class = "col-md-1 box" class = "six">6</div>
+            <div class = "col-md-1 box" class = "seven">7</div>
+            <div class = "col-md-1 box" class = "eight">8</div>
+            <div class = "col-md-1 box" class = "nine">9</div>
+            <div class = "col-md-1 box" class = "ten">10</div>
+            <div class = "col-md-1 box" class = "eleven">11</div>
           </div>
 
           <div class = "row">
-            <div class = "col-md-1" class = "one">1</div>
-            <div class = "col-md-1" class = "two">2</div>
-            <div class = "col-md-1" class = "three">3</div>
-            <div class = "col-md-1" class = "four">4</div>
-            <div class = "col-md-1" class = "five">5</div>
-            <div class = "col-md-1" class = "six">6</div>
-            <div class = "col-md-1" class = "seven">7</div>
-            <div class = "col-md-1" class = "eight">8</div>
-            <div class = "col-md-1" class = "nine">9</div>
-            <div class = "col-md-1" class = "ten">10</div>
-            <div class = "col-md-1" class = "eleven">11</div>
+            <div class = "col-md-1 box" class = "one">1</div>
+            <div class = "col-md-1 box" class = "two">2</div>
+            <div class = "col-md-1 box" class = "three">3</div>
+            <div class = "col-md-1 box" class = "four">4</div>
+            <div class = "col-md-1 box" class = "five">5</div>
+            <div class = "col-md-1 box" class = "six">6</div>
+            <div class = "col-md-1 box" class = "seven">7</div>
+            <div class = "col-md-1 box" class = "eight">8</div>
+            <div class = "col-md-1 box" class = "nine">9</div>
+            <div class = "col-md-1 box" class = "ten">10</div>
+            <div class = "col-md-1 box" class = "eleven">11</div>
           </div>
 
           <div class = "row">
-            <div class = "col-md-1" class = "one">1</div>
-            <div class = "col-md-1" class = "two">2</div>
-            <div class = "col-md-1" class = "three">3</div>
-            <div class = "col-md-1" class = "four">4</div>
-            <div class = "col-md-1" class = "five">5</div>
-            <div class = "col-md-1" class = "six">6</div>
-            <div class = "col-md-1" class = "seven">7</div>
-            <div class = "col-md-1" class = "eight">8</div>
-            <div class = "col-md-1" class = "nine">9</div>
-            <div class = "col-md-1" class = "ten">10</div>
-            <div class = "col-md-1" class = "eleven">11</div>
+            <div class = "col-md-1 box" class = "one">1</div>
+            <div class = "col-md-1 box" class = "two">2</div>
+            <div class = "col-md-1 box" class = "three">3</div>
+            <div class = "col-md-1 box" class = "four">4</div>
+            <div class = "col-md-1 box" class = "five">5</div>
+            <div class = "col-md-1 box" class = "six">6</div>
+            <div class = "col-md-1 box" class = "seven">7</div>
+            <div class = "col-md-1 box" class = "eight">8</div>
+            <div class = "col-md-1 box" class = "nine">9</div>
+            <div class = "col-md-1 box" class = "ten">10</div>
+            <div class = "col-md-1 box" class = "eleven">11</div>
           </div>
 
           <div class = "row">
-            <div class = "col-md-1" class = "one">1</div>
-            <div class = "col-md-1" class = "two">2</div>
-            <div class = "col-md-1" class = "three">3</div>
-            <div class = "col-md-1" class = "four">4</div>
-            <div class = "col-md-1" class = "five">5</div>
-            <div class = "col-md-1" class = "six">6</div>
-            <div class = "col-md-1" class = "seven">7</div>
-            <div class = "col-md-1" class = "eight">8</div>
-            <div class = "col-md-1" class = "nine">9</div>
-            <div class = "col-md-1" class = "ten">10</div>
-            <div class = "col-md-1" class = "eleven">11</div>
+            <div class = "col-md-1 box" class = "one">1</div>
+            <div class = "col-md-1 box" class = "two">2</div>
+            <div class = "col-md-1 box" class = "three">3</div>
+            <div class = "col-md-1 box" class = "four">4</div>
+            <div class = "col-md-1 box" class = "five">5</div>
+            <div class = "col-md-1 box" class = "six">6</div>
+            <div class = "col-md-1 box" class = "seven">7</div>
+            <div class = "col-md-1 box" class = "eight">8</div>
+            <div class = "col-md-1 box" class = "nine">9</div>
+            <div class = "col-md-1 box" class = "ten">10</div>
+            <div class = "col-md-1 box" class = "eleven">11</div>
           </div>
 
           <div class = "row">
-            <div class = "col-md-1" class = "one">1</div>
-            <div class = "col-md-1" class = "two">2</div>
-            <div class = "col-md-1" class = "three">3</div>
-            <div class = "col-md-1" class = "four">4</div>
-            <div class = "col-md-1" class = "five">5</div>
-            <div class = "col-md-1" class = "six">6</div>
-            <div class = "col-md-1" class = "seven">7</div>
-            <div class = "col-md-1" class = "eight">8</div>
-            <div class = "col-md-1" class = "nine">9</div>
-            <div class = "col-md-1" class = "ten">10</div>
-            <div class = "col-md-1" class = "eleven">11</div>
+            <div class = "col-md-1 box" class = "one">1</div>
+            <div class = "col-md-1 box" class = "two">2</div>
+            <div class = "col-md-1 box" class = "three">3</div>
+            <div class = "col-md-1 box" class = "four">4</div>
+            <div class = "col-md-1 box" class = "five">5</div>
+            <div class = "col-md-1 box" class = "six">6</div>
+            <div class = "col-md-1 box" class = "seven">7</div>
+            <div class = "col-md-1 box" class = "eight">8</div>
+            <div class = "col-md-1 box" class = "nine">9</div>
+            <div class = "col-md-1 box" class = "ten">10</div>
+            <div class = "col-md-1 box" class = "eleven">11</div>
           </div>
 
           <div class = "row">
-            <div class = "col-md-1" class = "one">1</div>
-            <div class = "col-md-1" class = "two">2</div>
-            <div class = "col-md-1" class = "three">3</div>
-            <div class = "col-md-1" class = "four">4</div>
-            <div class = "col-md-1" class = "five">5</div>
-            <div class = "col-md-1" class = "six">6</div>
-            <div class = "col-md-1" class = "seven">7</div>
-            <div class = "col-md-1" class = "eight">8</div>
-            <div class = "col-md-1" class = "nine">9</div>
-            <div class = "col-md-1" class = "ten">10</div>
-            <div class = "col-md-1" class = "eleven">11</div>
+            <div class = "col-md-1 box" class = "one">1</div>
+            <div class = "col-md-1 box" class = "two">2</div>
+            <div class = "col-md-1 box" class = "three">3</div>
+            <div class = "col-md-1 box" class = "four">4</div>
+            <div class = "col-md-1 box" class = "five">5</div>
+            <div class = "col-md-1 box" class = "six">6</div>
+            <div class = "col-md-1 box" class = "seven">7</div>
+            <div class = "col-md-1 box" class = "eight">8</div>
+            <div class = "col-md-1 box" class = "nine">9</div>
+            <div class = "col-md-1 box" class = "ten">10</div>
+            <div class = "col-md-1 box" class = "eleven">11</div>
           </div>
 
           <div class = "row">
-            <div class = "col-md-1" class = "one">1</div>
-            <div class = "col-md-1" class = "two">2</div>
-            <div class = "col-md-1" class = "three">3</div>
-            <div class = "col-md-1" class = "four">4</div>
-            <div class = "col-md-1" class = "five">5</div>
-            <div class = "col-md-1" class = "six">6</div>
-            <div class = "col-md-1" class = "seven">7</div>
-            <div class = "col-md-1" class = "eight">8</div>
-            <div class = "col-md-1" class = "nine">9</div>
-            <div class = "col-md-1" class = "ten">10</div>
-            <div class = "col-md-1" class = "eleven">11</div>
+            <div class = "col-md-1 box" class = "one">1</div>
+            <div class = "col-md-1 box" class = "two">2</div>
+            <div class = "col-md-1 box" class = "three">3</div>
+            <div class = "col-md-1 box" class = "four">4</div>
+            <div class = "col-md-1 box" class = "five">5</div>
+            <div class = "col-md-1 box" class = "six">6</div>
+            <div class = "col-md-1 box" class = "seven">7</div>
+            <div class = "col-md-1 box" class = "eight">8</div>
+            <div class = "col-md-1 box" class = "nine">9</div>
+            <div class = "col-md-1 box" class = "ten">10</div>
+            <div class = "col-md-1 box" class = "eleven">11</div>
           </div>
+        </div>
+        </br>
 
+        <div class="col-md 6 col-md-offset-4">
+          <div class = "row">
+            <div class="col-md-6">
+              <h1 id = "start">START</h1>
+            </div>
+          </div>
+        </div>
+
+      </div>
 
   </body>
 </html>
