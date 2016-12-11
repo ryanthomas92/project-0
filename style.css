@@ -7,3 +7,11 @@
   border: 1px dashed black;
   text-align: center;
 }
+
+.hero {
+  background-color: green;
+}
+
+.enemy {
+  background-color: red;
+}
