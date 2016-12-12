@@ -36,6 +36,12 @@ $(document).ready(function() {
       $(".hero").removeClass("hero");
       coordinates[1] -= 1;
       var position = coordinates.join('');
+      if($("#" + position).hasClass("enemy")) {
+        alert("You have been Tackled... Loser");
+      }
+      if($("#" + position).hasClass("zone")) {
+        alert("You WIN... Yay!");
+      }
       console.log(position);
       $("#" + position).addClass("hero");
       return false;
@@ -47,6 +53,12 @@ $(document).ready(function() {
       $(".hero").removeClass("hero");
       coordinates[0] -= 1;
       var position = coordinates.join('');
+      if($("#" + position).hasClass("enemy")) {
+        alert("You have been Tackled... Loser");
+      }
+      if($("#" + position).hasClass("zone")) {
+        alert("You WIN... Yay!");
+      }
       console.log(position);
       $("#" + position).addClass("hero")
        return false;
@@ -58,6 +70,12 @@ $(document).ready(function() {
       $(".hero").removeClass("hero");
       coordinates[1] += 1;
       var position = coordinates.join('');
+      if($("#" + position).hasClass("enemy")) {
+        alert("You have been Tackled... Loser");
+      }
+      if($("#" + position).hasClass("zone")) {
+        alert("You WIN... Yay!");
+      }
       console.log(position);
       $("#" + position).addClass("hero")
        return false;
@@ -69,6 +87,12 @@ $(document).ready(function() {
       $(".hero").removeClass("hero");
       coordinates[0] += 1;
       var position = coordinates.join('');
+      if($("#" + position).hasClass("enemy")) {
+        alert("You have been Tackled... Loser");
+      }
+      if($("#" + position).hasClass("zone")) {
+        alert("You WIN... Yay!");
+      }
       console.log(position);
       $("#" + position).addClass("hero")
        return false;

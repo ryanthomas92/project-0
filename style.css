@@ -1,17 +1,25 @@
 .box {
   height: 50px;
   border: 1px dashed black;
+  background-color: green;
 }
 
+
 #start {
-  border: 1px dashed black;
+  background-color: blue;
+  border: 2px solid red;
   text-align: center;
+  color: white;
 }
 
 .hero {
-  background-color: green;
+  background-color: pink;
 }
 
 .enemy {
   background-color: red;
+}
+
+.zone {
+  background-color: orange;
 }
