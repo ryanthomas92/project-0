@@ -1,15 +1,19 @@
 $(document).ready(function() {
+
+  var coordinates = [10,6];
+
+
   var field = [
-    $("#1one"), $("#1two"), $("#1three"), $("#1four"), $("#1five"), $("#1six"), $("#1seven"), $("#1eight"), $("#1nine"), $("#1ten"), $("#1eleven"),
-    $("#2one"), $("#2two"), $("#2three"), $("#2four"), $("#2five"), $("#2six"), $("#2seven"), $("#2eight"), $("#2nine"), $("#2ten"), $("#2eleven"),
-    $("#3one"), $("#3two"), $("#3three"), $("#3four"), $("#3five"), $("#3six"), $("#3seven"), $("#3eight"), $("#3nine"), $("#3ten"), $("#3eleven"),
-    $("#4one"), $("#4two"), $("#4three"), $("#4four"), $("#4five"), $("#4six"), $("#4seven"), $("#4eight"), $("#4nine"), $("#4ten"), $("#4eleven"),
-    $("#5one"), $("#5two"), $("#5three"), $("#5four"), $("#5five"), $("#5six"), $("#5seven"), $("#5eight"), $("#5nine"), $("#5ten"), $("#5eleven"),
-    $("#6one"), $("#6two"), $("#6three"), $("#6four"), $("#6five"), $("#6six"), $("#6seven"), $("#6eight"), $("#6nine"), $("#6ten"), $("#6eleven"),
-    $("#7one"), $("#7two"), $("#7three"), $("#7four"), $("#7five"), $("#7six"), $("#7seven"), $("#7eight"), $("#7nine"), $("#7ten"), $("#7eleven"),
-    $("#8one"), $("#8two"), $("#8three"), $("#8four"), $("#8five"), $("#8six"), $("#8seven"), $("#8eight"), $("#8nine"), $("#8ten"), $("#8eleven"),
-    $("#9one"), $("#9two"), $("#9three"), $("#9four"), $("#9five"), $("#9six"), $("#9seven"), $("#9eight"), $("#9nine"), $("#9ten"), $("#9eleven"),
-    $("#10one"), $("#10two"), $("#10three"), $("#10four"), $("#10five"), $("#10six"), $("#10seven"), $("#10eight"), $("#10nine"), $("#10ten"), $("#10eleven")
+    $("#11"), $("#12"), $("#13"), $("#14"), $("#15"), $("#16"), $("#17"), $("#18"), $("#19"), $("#110"), $("#111"),
+    $("#21"), $("#22"), $("#23"), $("#24"), $("#25"), $("#26"), $("#27"), $("#28"), $("#29"), $("#210"), $("#211"),
+    $("#31"), $("#32"), $("#33"), $("#34"), $("#35"), $("#36"), $("#37"), $("#38"), $("#39"), $("#310"), $("#311"),
+    $("#41"), $("#42"), $("#43"), $("#44"), $("#45"), $("#46"), $("#47"), $("#48"), $("#49"), $("#410"), $("#411"),
+    $("#51"), $("#52"), $("#53"), $("#54"), $("#55"), $("#56"), $("#57"), $("#58"), $("#59"), $("#510"), $("#511"),
+    $("#61"), $("#62"), $("#63"), $("#64"), $("#65"), $("#66"), $("#67"), $("#68"), $("#69"), $("#610"), $("#611"),
+    $("#71"), $("#72"), $("#73"), $("#74"), $("#75"), $("#76"), $("#77"), $("#78"), $("#79"), $("#710"), $("#711"),
+    $("#81"), $("#82"), $("#83"), $("#84"), $("#85"), $("#86"), $("#87"), $("#88"), $("#89"), $("#810"), $("#811"),
+    $("#91"), $("#92"), $("#93"), $("#94"), $("#95"), $("#96"), $("#97"), $("#98"), $("#99"), $("#910"), $("#911"),
+    $("#101"), $("#102"), $("#103"), $("#104"), $("#105"), $("#106"), $("#107"), $("#108"), $("#109"), $("#1010"), $("#1011")
   ];
 
   for(var i = 0; i < field.length; i++) {
@@ -22,38 +26,51 @@ $(document).ready(function() {
   }
   //all jQuery must be in here
   //On start button click, make the "player" appear as green div
-  $("#start").on("click", function() {
-    $("#start_line").addClass("hero");
-
+  $("#start").one("click", function() {
+    $("#106").addClass("hero");
   });
 
   $(document).keydown(function(key_pressed){
-
+//left
     if (key_pressed.keyCode == 37) {
-      
-      // $("#goLeft").css("background-color","green" )
-      // alert( "left pressed" );
+      $(".hero").removeClass("hero");
+      coordinates[1] -= 1;
+      var position = coordinates.join('');
+      console.log(position);
+      $("#" + position).addClass("hero");
       return false;
     }
   });
-
+//up
   $(document).keydown(function(key_pressed){
     if (key_pressed.keyCode == 38) {
-       alert( "up pressed" );
+      $(".hero").removeClass("hero");
+      coordinates[0] -= 1;
+      var position = coordinates.join('');
+      console.log(position);
+      $("#" + position).addClass("hero")
        return false;
     }
   });
-
+//
   $(document).keydown(function(key_pressed){
     if (key_pressed.keyCode == 39) {
-       alert( "right pressed" );
+      $(".hero").removeClass("hero");
+      coordinates[1] += 1;
+      var position = coordinates.join('');
+      console.log(position);
+      $("#" + position).addClass("hero")
        return false;
     }
   });
 
   $(document).keydown(function(key_pressed){
     if (key_pressed.keyCode == 40) {
-       alert( "down pressed" );
+      $(".hero").removeClass("hero");
+      coordinates[0] += 1;
+      var position = coordinates.join('');
+      console.log(position);
+      $("#" + position).addClass("hero")
        return false;
     }
   });
